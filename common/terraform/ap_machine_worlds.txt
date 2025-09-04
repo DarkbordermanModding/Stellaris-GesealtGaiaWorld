@@ -270,21 +270,6 @@ terraform_link = {
 
 	ai_weight = {
 		weight = 1
-		modifier = { #Ocean Worlds are Aquatic species' paradises
-			factor = 0
-			from = {
-				is_colony = yes
-				pop_percentage = {
-					percentage >= 0.5
-					limit = {
-						OR = {
-							has_trait = trait_aquatic
-							has_trait = trait_robot_aquatic
-						}
-					}
-				}
-			}
-		}
 	}
 }
 
